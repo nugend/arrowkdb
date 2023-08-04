@@ -35,11 +35,13 @@ float_schema:.arrowkdb.sc.schema[(ts_fd,f32_fd,f64_fd,dec_fd)];
 -1"\n+----------|| Create data for each column in the table ||----------+\n";
 ts_data:asc N?0p;
 
-f32_data:(N?100e),0Ne;
+f32_data:(N?100e);
 f32_data[0]:1.23e;
+f32_data[N-1]:0Ne;
 f64_data:(N?100f),0n;
 f64_data[1]:4.56f;
-dec_data:{"F"$.Q.f[2]x} each (N?(10f)),0n
+f64_data[N-1]:0n;
+dec_data:{"F"$.Q.f[2]x} each (N?(10f))
 dec_data[2]:7.89f
 
 -1"\n+----------|| Combine the data for all columns ||----------+\n";
