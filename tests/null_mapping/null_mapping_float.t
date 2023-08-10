@@ -38,7 +38,7 @@ ts_data:asc N?0p;
 f32_data:(N?100e);
 f32_data[0]:1.23e;
 f32_data[N-1]:0Ne;
-f64_data:(N?100f),0n;
+f64_data:(N?100f);
 f64_data[1]:4.56f;
 f64_data[N-1]:0n;
 dec_data:{"F"$.Q.f[2]x} each (N?(10f))

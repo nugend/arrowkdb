@@ -4,6 +4,13 @@
 	"name": "C++",
 	"build": {
 		"dockerfile": "Dockerfile"
+	},
+
+	"containerEnv": {
+		"QHOME": "/workspaces/q/l64"
+	},
+	"remoteEnv": {
+		"PATH": "${containerEnv:PATH}:${containerEnv:QHOME}/l64"
 	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
